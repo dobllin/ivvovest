@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #013528;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    border: none;
+    background-color: #7e7e7e;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-button:hover {
+    background-color: #c4c4c4;
+}
+
+.category-button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.see-all {
+    margin-left: auto;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Kartu Desain */
+.card {
+    width: 300px;
+    height: 300px; /* Tinggi standar untuk kartu */
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card.selected {
+    width: 500px; /* Kartu yang dipilih akan menjadi lebih panjang */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.card .icon {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.card .icon span {
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-button span {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Desain untuk Masing-Masing Kartu */
+.pet-friendly {
+    background-image: url('pexels-feyzayildirimphoto-18475132.jpg');  
+    background-size: cover;
+
+}
+
+.orchids {
+    background-image: url('daun\ 2.png');    
+    background-size: cover;
+
+
+}
+
+.succulents {
+    background-image: url('daun\ 3.png');   
+    background-size: cover;
+
+}
+
+.indoor-collection {
+    text-align: center;
+    padding: 20px;
+}
+
+.indoor-collection h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.indoor-collection p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.grid-item a.arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.philodendron {
+    background: url('daun\ 1.png') no-repeat center center/cover;
+}
+
+.calathea {
+    background: url('https://via.placeholder.com/300/darkgreen') no-repeat center center/cover;
+}
+
+.air-purifying {
+    background: url('https://via.placeholder.com/300/gray') no-repeat center center/cover;
+}
+
+.low-light-tolerant {
+    background: url('https://via.placeholder.com/300/forestgreen') no-repeat center center/cover;
+}
+
+/* Responsivitas */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%; /* Lebar kartu beradaptasi dengan layar */
+    }
+    .card.selected {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .category-button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%; /* Memaksimalkan lebar pada layar kecil */
+    }
+    .card.selected {
+        height: 500px;
+    }
+}
