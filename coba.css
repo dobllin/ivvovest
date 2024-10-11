@@ -465,6 +465,102 @@ section.why-protect p {
     cursor: not-allowed;
 }
 
+.slider {
+    width: 1300px;
+    max-width: 100vw;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 200px;
+    
+}
+
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    padding: 10px;
+    width: 1300px;
+    max-width: 100vw;
+    height: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img {
+    width: 40%;
+   
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active {
+    width: 30px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .slider{
+    height: 400px;
+  }  
+}
 /* Desain Responsif */
 @media (max-width: 768px) {
     .team-card {

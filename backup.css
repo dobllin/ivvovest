@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 
 body {
     margin: 0;
@@ -357,6 +359,7 @@ header a {
 
 .category-buttons {
     display: flex;
+    margin-top: 10%;
     justify-content: flex-start;
     gap: 15px;
     margin-bottom: 20px;
@@ -412,7 +415,7 @@ header a {
 }
 
 .card h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -474,6 +477,7 @@ header a {
 }
 
 .indoor-collection {
+    margin-top: 100px;
     text-align: center;
     padding: 20px;
 }
@@ -487,7 +491,7 @@ header a {
 }
 
 .indoor-collection p {
-    font-family: "Sora";
+    font-family: "Carme";
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
@@ -517,7 +521,10 @@ header a {
 }
 
 .grid-item h2 {
-    font-size: 1.8rem;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 800;
+    color: #f1683a;
     margin-bottom: 10px;
 }
 
@@ -544,11 +551,524 @@ header a {
 }
 
 .air-purifying {
-    background: url('hero\ \(3\).jpg') no-repeat center center/cover;
+    background: url('air.jpg') no-repeat center center/cover;
 }
 
 .low-light-tolerant {
     background: url('hero\ \(4\).jpg') no-repeat center center/cover;
+}
+
+
+
+.image-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 0; /* No gap between the two boxes */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content2{
+    background-color: #1a1a1a;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.content2 h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Protest Strike" ;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-right: 200px;
+    margin-bottom: 0;
+    color: #f1683a;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+.content2 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Sora";
+    font-weight:400;
+    font-size:17px;
+    padding-left: 400px;
+    padding-right: 400px;
+
+}
+.left-box {
+    display: flex;
+
+    width: 60%;
+    height: 60%;
+}
+
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #014b37;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Membuat tombol membesar */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    background-color: #002d21;
+}
+
+.btn:active {
+    transform: scale(0.95); /* Efek menciut saat tombol ditekan */
+}
+
+
+.about {
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#01271d;
+}
+
+.about .mn img {
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    border-radius: 10% / 50%;
+}
+
+
+
+
+.all-text  {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+    background-color:transparent;
+}
+
+.mn {
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-text h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.all-text h1 {
+    font-size: 60px;
+    color: #f1683a;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.all-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #efe7e7;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+
+.bn button {
+    background:#efdfc5;
+    padding: 20px 32px ;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb( 0 0 0 / 45%) ;
+    border-radius: 30px;
+}
+
+
+.bn button:hover{
+    background-color:#084541;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.bn .bn2 {
+    background:#bac2a3;
+    color: aliceblue;
+}
+
+
+
+@media screen and(max-width:1250px) {
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+    .all-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media screen and(max-width:650px){
+    .about .mn img {
+        margin-bottom: 35px;
+    }
+    .all-text h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+}
+
+.team-section {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    background: #01271d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.team-carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    cursor: grab;
+}
+
+.team-card {
+    flex: 0 0 60%; /* Lebar kartu lebih kecil dari kontainer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #314231;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 15px; /* Tambahkan margin agar ada ruang */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
+.team-card h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #f1683a;
+}
+
+.team-card p {
+    font-size: 1em;
+    color: #ffffff;
+}
+/* Efek Hover pada Kartu */
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Navigasi Carousel */
+.carousel-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.carousel-btn.left {
+    left: 0;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+.carousel-btn:hover {
+    background: #555;
+}
+
+.carousel-btn:disabled {
+    background: #989898;
+    cursor: not-allowed;
+}
+
+/* Desain Responsif */
+@media (max-width: 768px) {
+    .team-card {
+        flex: 0 0 80%; /* Ukuran kartu lebih besar di layar kecil */
+        padding: 15px;
+    }
+
+    .carousel-btn {
+        padding: 5px 15px; /* Ukuran tombol lebih kecil */
+    }
+
+    .team-section {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .why-protect {
+        padding: 30px;
+    }
+
+    .climate-section {
+        flex-direction: column;
+    }
+
+    .reasons {
+        flex-direction: column;
+    }
+
+    .reason {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image{
+        display: none;
+    }
+
+    .left-content p {
+        font-size: 1rem;
+    }
+
+    .right-content p {
+        font-size: 1rem;
+    }
+
+    .climate-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .climate-content p {
+        font-size: 1rem;
+    }
+
+    
+}
+
+
+
+
+footer {
+    background-color: #001f17;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.fChild {
+    display: flex;
+    flex-direction: column;
+}
+
+.A {
+    width: 30%;
+}
+
+.svgBox {
+    width: 100%;
+}
+
+.svgBox svg {
+    width: 20%;
+    height: 20%;
+    
+}
+
+
+.B {
+    gap: 1px;
+    flex-direction: row;
+    width: fit-content;
+    width: 35%;
+}
+
+.B a {
+    width: 33%;
+    font-size: 15px;
+    color: #066b9d;
+    text-align: center;
+    font-family: "Carme";
+    font-weight: 500;
+
+}
+
+.B a:hover{
+    color: #ffffff;
+}
+
+.C {
+    gap: 6px;
+   width: 35%;
+}
+
+.C input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 92%;
+}
+/* Responsivitas */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%; /* Lebar kartu beradaptasi dengan layar */
+    }
+    .card.selected {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .category-button {
+        margin-bottom: 10px;
+    }
+    .footerBox {
+        flex-direction: column;
+    }
+
+    .A {
+        order: 1;
+    }
+
+    .B {
+        order: 3;
+        width: 70%;
+    }
+
+    .C {
+        order: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%; /* Memaksimalkan lebar pada layar kecil */
+    }
+    .card.selected {
+        height: 500px;
+    }
+
+    .B {
+        width: 100%;
+    }
 }
 
 /* Responsivitas */
